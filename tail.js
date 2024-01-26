@@ -16,9 +16,9 @@ tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
 
 const empty = [];
-tail(empty);
-assertEqual(empty.length);
+const emptyResult = tail(empty);
+assertEqual(emptyResult.length, 0); 
 
 const example = ["Hi"];
-tail(example);
-assertEqual(example.length, 1);
+const exampleResult = tail(example);
+assertEqual(exampleResult.length, 0); 
