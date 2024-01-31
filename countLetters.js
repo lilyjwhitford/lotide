@@ -6,25 +6,23 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function (sentence) {
-  
+const countLetters = function(sentence) {
 
-  let lettersInSentence = {}; 
+  let lettersInSentence = {};
   
-  for (let letters of sentence) { 
-    console.log(lettersInSentence);
-    if (letters !== " ") { 
-      if (letters in lettersInSentence) { 
-      lettersInSentence[letters] += 1; 
-    } else {
-      lettersInSentence[letters] = 1;
-    }  
-    } 
+  for (let letters of sentence) {
+    if (letters !== " ") {
+      if (letters in lettersInSentence) {
+        lettersInSentence[letters] += 1;
+      } else {
+        lettersInSentence[letters] = 1;
+      }
+    }
     
   }
   return lettersInSentence;
 };
 
-countLetters("lighthouse in the house")
-arr = countLetters("lighthouse in the house");
-assertEqual(arr);
+countLetters("lighthouse in the house");
+let arr = countLetters("lighthouse in the house");
+assertEqual(arr['e'], 3);
