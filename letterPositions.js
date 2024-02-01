@@ -5,12 +5,12 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) { // iterate through each character in the sentence
     let character = sentence[i]; // get character to current index
     if (character !== " ") { // check if character is not a space
-    } if (results[character]) { // determine whether the letter has already been encountered
-      results[character].push(i);// if it has, append the current index to the array associated with that letter in your results object
-    } else {
-      results[character] = [i];// if it hasnt, create a new array and start tracking the indices
+      if (results[character]) { // determine whether the letter has already been encountered
+        results[character].push(i);// if it has, append the current index to the array associated with that letter in your results object
+      } else {
+        results[character] = [i];// if it hasnt, create a new array and start tracking the indices
+      }
     }
-      
   }
     
   return results;
@@ -36,4 +36,5 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
+console.log(letterPositions("My name is Lily and im 23 years old!"));
 assertArraysEqual(letterPositions("hello").e, [1]);
