@@ -25,9 +25,9 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for (const key of keys1) {// loop through keys, checking for values that are arrays
-    if  (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-      if (!eqArrays(object1[key], object2[key])) {
-        return false; // return false if arrays dont ===
+    if  (Array.isArray(object1[key]) && Array.isArray(object2[key])) { // if both values for current key in both object1 and object 2 are arrays
+      if (!eqArrays(object1[key], object2[key])) { // and if arrays not equal, according to eqArrays
+        return false; // return false if objects are not ===
       }
     } else if (object1[key] !== object2[key]) {
       return false; // return false if primitive values dont match
@@ -36,9 +36,11 @@ const eqObjects = function(object1, object2) {
   return true; // return true if all values ===
 };
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log("Test 3:", eqObjects(cd, dc)); // Expected output: true
+const shirtObject = { color: "red", size: "medium" };
+const anotherShirtObject= { size: "medium", color: "red" };
+eqObjects(shirtObject , anotherShirtObject); 
+assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log("Test 4:", eqObjects(cd, cd2)); // Expected output: false
+const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
+eqObjects(shirtObject , longSleeveShirtObject); 
+assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
