@@ -26,7 +26,16 @@ for (let item of array) {
   return results;
 }
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
-
-assertArraysEqual(map, [ 'g', 'c', 't', 'm', 't' ] );
+// define test case
+const testMapFunction = () => {
+// given
+  const inputArray = ["ground", "control", "to", "major", "tom"];
+  const expectedOutput = ["g", "c", "t", "m", "t"];
+  const callback = word => word[0]; //take the first character of each word
+  // when
+  const actualOutput = map(inputArray, callback);
+  // then
+  assertArraysEqual(actualOutput, expectedOutput);
+ };
+ 
+ testMapFunction();
