@@ -42,3 +42,4 @@ The following functions are currently implemented:
 * `tail(array)`: Retrieves every element except the head (first element) of an array.
 * `takeUntil(array, callback)`: Returns a slice of an array with elements taken from the beginning.
 * `without(source, itemsToRemove)`: Returns a subset of a given array, and removes unwanted elements.
+* `map(array, callback)`: Returns a new array based on the results of the callback function.
