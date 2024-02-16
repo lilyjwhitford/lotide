@@ -1,6 +1,6 @@
 {
   "name": "@lilywhitford/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A series of utility functions for programming tasks.",
   "main": "index.js",
   "directories": {

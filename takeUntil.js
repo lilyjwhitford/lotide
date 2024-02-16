@@ -41,3 +41,5 @@ const testTakeUntilFunction = () => {
 };
  
 testTakeUntilFunction();
+
+module.exports = takeUntil;

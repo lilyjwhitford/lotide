@@ -38,3 +38,5 @@ const testMapFunction = () => {
 };
  
 testMapFunction();
+
+module.exports = map;

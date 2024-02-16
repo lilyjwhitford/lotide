@@ -31,3 +31,5 @@ const gesture1 = { greeting: "hi!", farewell: "bye!" };
 const gesture2 = { farewell: "bye!", greeting: "hi!" };
 
 assertObjectsEqual(gesture1, gesture2);
+
+module.exports = assertObjectsEqual;

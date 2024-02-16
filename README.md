@@ -26,16 +26,19 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `countLetters`: Returns a count of each letter from a string.
-* `countOnly`: Returns counts for a specific subset from a collection of items.
-* `eqArrays`: Compares two arrays for a perfect match.
-* `eqObjects`: Returns true or false based on a perfect match from two objects.
-* `findKey`: Scans an object and returns the first key.
-* `findKeyByValue`: Returns the first key which contains the given value from an object.
-* `flatten`: Returns a singular array from a nested array.
-* `head`: Retrieves the first element from an array.
-* `letterPositions`: Returns all indices in a string where each character is found.
-* `middle`: Returns the middle elements from a given array.
-* `tail`: Retrieves every element except the head (first element) of an array.
-* `takeUntil`: Returns a slice of an array with elements taken from the beginning.
-* `without`: Returns a subset of a given array, and removes unwanted elements.
+* `assertArraysEqual(array1, array2)`: Compares two arrays, printing out a pass/fail message to the console.
+* `assertEqual(actual, expected)`: Compares two primitive types, printing out a pass/fail message to the console.
+* `assertObjectsEqual(actual, expected)`: Compares two obejcts, printing out a pass/fail message to the console.
+* `countLetters(sentence)`: Returns a count of each letter from a string.
+* `countOnly(allItems, itemsToCount)`: Returns counts for a specific subset from a collection of items. 
+* `eqArrays(arr1, arr2)`: Compares two arrays for a perfect match.
+* `eqObjects(object1, object2)`: Returns true or false based on a perfect match from two objects.
+* `findKey(object, callback)`: Scans an object and returns the first key.
+* `findKeyByValue(object, value)`: Returns the first key which contains the given value from an object.
+* `flatten(array)`: Returns a singular array from a nested array.
+* `head(array)`: Retrieves the first element from an array.
+* `letterPositions(sentence)`: Returns all indices in a string where each character is found.
+* `middle(array)`: Returns the middle elements from a given array.
+* `tail(array)`: Retrieves every element except the head (first element) of an array.
+* `takeUntil(array, callback)`: Returns a slice of an array with elements taken from the beginning.
+* `without(source, itemsToRemove)`: Returns a subset of a given array, and removes unwanted elements.

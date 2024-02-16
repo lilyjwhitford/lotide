@@ -36,3 +36,5 @@ const hotdogEatingCompetition = {
 
 assertEqual(findKeyByValue(hotdogEatingCompetition, "31"), "Alice");
 assertEqual(findKeyByValue(hotdogEatingCompetition, "81"), "Matt");
+
+module.exports = findKeyByValue;

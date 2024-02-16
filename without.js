@@ -33,3 +33,5 @@ const result = without(words, ["lighthouse"]); // => [2, 3]
 
 without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+module.exports = without;
